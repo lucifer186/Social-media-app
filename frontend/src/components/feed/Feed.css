@@ -1,0 +1,24 @@
+.feed{
+    flex: 6.5;
+}
+.feedWrapper{
+    padding: 20px;
+}
+@media screen and (max-width: 475px) {
+    .feed{
+        flex: 0;
+        width: 120%;
+    }
+    .feedWrapper{
+        width: 170%;
+    }
+}
+@media screen and (max-width:769px) and (min-width:765px) {
+    .feed{
+        margin-right: -234px;
+        height: 283vh;
+        display: flex;
+        flex-direction: column-reverse;
+    
+    }
+}

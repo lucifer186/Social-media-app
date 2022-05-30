@@ -1,0 +1,265 @@
+.rightbar{
+    flex: 3.5;
+}
+.wrapper {
+    padding: 20px 20px 0 0;
+  }
+  
+  .birthdayConatiner{
+    display: flex;
+    align-items: center;
+  }
+  
+  .brthdayImgae{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .birthdaytext{
+    font-weight: 300;
+    font-size: 15px;
+  }
+
+  .rightbarAd{
+      width: 100%;
+      border-radius: 14px;
+      margin: 30px 0;
+  }
+
+  .onlinefriends{
+    margin-bottom: 20px;
+}
+
+.rightbarfriendlist{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.rightbarfriend{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.rightbarprofileimagecontainer{
+    margin-right: 10px;
+    position: relative;
+}
+
+.rightbarprofileimg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.rightbaronline{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: limegreen;
+    position: absolute;
+    top: -2px;
+    right: 0;
+    border: 2px solid white;
+}
+.rightbarUseraname{
+    font-weight: 500;
+}
+.rightbarTitle{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.rightbarInfo{
+  margin-bottom: 30px;
+  margin-top: 11px;
+}
+
+.rightbarInfoItem{
+  margin-bottom: 10px;
+}
+
+.rightbarInfoKey{
+  font-weight: 500;
+  margin-right: 15px;
+  color: #555;
+}
+
+.rightbarInfoValue{
+  font-weight: 300;
+}
+
+.rightbarFollowings{
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+
+.rightbarFollowing{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.rightbarFollowingImg{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.followButton{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #1872f2;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.chating{
+  /* margin-top: 30px; */
+  margin-bottom: 16px;
+  background-color:  limegreen;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+.chating:hover{
+  background-color: white;
+  color: black;
+  border:1px solid grey;
+}
+.followButton:focus{
+  outline: none;
+}
+@media screen and (max-width: 475px) {
+
+ .birthdayConatiner, .fakefriends{
+   display: none;
+ }
+  .mediaHome{
+    height: 11vh;
+
+  }
+  .mediaPicture{
+    display: flex;
+    flex-direction: row;
+    width: 148%;
+    margin-left: 85px;
+    margin-top: 15px;
+    justify-content: space-around;
+    height: 32vh;
+  }
+  .rightbarTitle{
+    margin-left: 20px;
+    font-size: 25px;
+    margin-bottom: 14px;
+  }
+  .rightbartitle{
+    font-size: 26px;
+  }
+  .rightbarInfo{
+    font-size: 24px;
+  }
+  .userfrineds{
+    margin-left: 48px;
+    top: 0vh;
+ 
+    overflow-y: scroll;
+    height: auto;
+    width: 50%;
+
+  }
+  .rightbarFollowings{
+    height: 20vh;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+
+  }
+  .rightbarFollowingName{
+    margin-left: 11px;
+  }
+  .chating{
+    font-size: 1.4rem;
+    height: 6vh;
+  }
+
+ 
+}
+@media screen and (max-width:769px) and (min-width:765px) {
+  .birthdayConatiner, .fakefriends{
+    display: none;
+  }
+  .mediaPicture{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+
+    margin-top: 15px;
+    margin-right: 10px;
+
+    height: 32vh;
+  }
+
+  .rightbarTitle{
+    margin-left: 20px;
+    font-size: 25px;
+    margin-bottom: 14px;
+  }
+  .rightbartitle{
+    font-size: 26px;
+  }
+  .rightbarInfo{
+    font-size: 24px;
+  } 
+  .userfrineds{
+    margin-left: 48px;
+   
+    height: auto;
+ 
+
+  }
+  .rightbarFollowings{
+    height: 20vh;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+
+  }
+  .rightbarFollowingName{
+    margin-left: 11px;
+  }
+  .chating{
+    font-size: 1.4rem;
+    height: 6vh;
+  }
+  .userinformation{
+    margin-left: -255px;
+    width: 83%;
+  }
+
+}
+@media screen and (max-width:541px) and (min-width:539px) {
+  .birthdayConatiner, .fakefriends
+  {
+    display: none;
+  }
+
+}

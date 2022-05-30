@@ -1,0 +1,92 @@
+.edit-profile {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .editWrapper {
+    width: 24%;
+    height: 75%;
+    display: flex;
+  }
+
+  hr{
+      margin-bottom: 12px;
+  }
+  h2{
+      margin-bottom: 8px;
+      font-family: cursive;
+    font-size: 2.5rem;
+
+  }
+  
+
+  .formBox1{
+      height: 560px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid;
+      border-radius: 5%;
+  }
+  
+  .editInput{
+    height: 50px;
+    
+    font-size: 18px;
+    padding-left: 20px;
+    background: none;
+    border: none;
+    border: 2px solid #898585;;
+    outline: none;
+    border-radius: 17px;
+  }
+  
+  .loginInput:focus{
+      outline: none;
+  }
+  
+  .editButton{
+      height: 50px;
+      border-radius: 10px;
+      border: none;
+      background-color: #1775ee;
+      color: white;
+      font-size: 20px;
+      font-weight: 500;
+      cursor: pointer;
+      margin-top:26px;
+  }
+  
+  label{
+      margin-bottom: 11px;
+  }
+  #file, #coverfile{
+      margin-top: 5px;
+  }
+
+  @media screen and (max-width:475px) {
+    .edit-profile{
+      height: 205vh;
+      width: 96vh;
+    }
+    .fromsubmission{
+      margin-left: -22vh;
+    }
+    .formBox1{
+      height: 122vh;
+      border-radius: 4%;
+    }
+    .editInput, label {
+      font-size: 24px;
+    }
+    .editButton{
+      font-size: 30px;
+    }
+    
+  }

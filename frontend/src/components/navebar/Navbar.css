@@ -1,0 +1,164 @@
+.navbarr-container{
+    height: 50px;
+    width: 100%;
+    background-color: #1877f2;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo{
+font-size: 24px;
+margin-left: 20px;
+color: white;
+cursor: pointer;
+font-weight: bold;
+/* transition: transform 450ms; */
+}
+.logo:hover{
+    transform: scale(1.08);
+}
+.navbar-left{
+    flex: 3;
+    /* background-color: aquamarine; */
+}
+.searchbar{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex; 
+    align-items: center;
+}
+.seacrhIcon{
+font-size: 20px !important;
+margin-left: 10px;
+}
+.searchInput{
+    border: none;
+    width: 70%;
+
+}
+
+.searchInput:focus{
+    outline: none;
+}
+.navbar-center{
+    flex: 5;
+    /* background-color: blueviolet; */
+}
+
+.navbar-right{
+flex: 4;
+display: flex;
+align-items: center;
+justify-content: space-around;
+color: white;
+/* background-color: tomato; */
+}
+.navbarlink{
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 450ms;
+}
+.navbarlink:hover{
+    /* color: rgb(157, 157, 157);
+     */
+     transform: scale(1);
+}
+.navbarIcons{
+    display: flex;
+}
+.navbarIcon{
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+}
+.topbarIconBadge{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+.navImg{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.menuIcon{
+    display: none;
+}
+@media screen and (max-width:542px) and (min-width:539px) {
+    .navbarr-container{
+        width: 95vh;
+    }
+}
+@media screen and (max-width:475px) {
+    .navbarr-container{
+  width: 216%;
+  height: 78px;
+    }
+    .searchbar{
+        margin-left: 24px;
+        width: 80%;
+        height: 50px;
+    
+    }
+    input{
+        font-size: 20px;
+    }
+    .menuIcon{
+        display: contents;
+        cursor: pointer;
+
+    }
+    .navbarlink{
+        font-size: 30px;
+    }
+    .navbar-center{
+        flex: 3;
+    }
+    .navbar-right{
+        margin-right: 30px;
+    }
+    .logo{
+        font-size: 35px;
+    }
+   .navImg{
+    width: 52px;
+    height: 50px;
+    object-fit: cover;
+   }
+ 
+   .chatss{
+       width: 40px;
+       height: 40px;
+   }
+
+}
+@media screen and (max-width:541px) and (min-width:539px)  {
+    .menuIcon{
+        display: contents;
+    }
+}
+
+@media screen and (max-width:321px) and (min-width:319px){
+    .navbarr-container{
+        width: 76vh;
+        top:0
+    }
+}
