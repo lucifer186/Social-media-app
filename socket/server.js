@@ -1,5 +1,6 @@
 
-const port = process.env.PORT || 8900;
+const port = process.env.PORT ;
+// const port = process.env.PORT || 8900;
 
 const io = require('socket.io')(port,{
     cors:{
