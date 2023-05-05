@@ -2,6 +2,9 @@ import React,{useState, useEffect} from "react";
 import "./Friends.css"
 import { axiosInstance } from "../../config";
 import {Link} from 'react-router-dom'
+// import axios from "axios";
+
+
 function Friends() {
   const P_F = process.env.REACT_APP_PUBLIC_FOLDER
  

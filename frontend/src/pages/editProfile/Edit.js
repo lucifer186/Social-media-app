@@ -4,6 +4,10 @@ import { AuthContext } from "../../context/AuthContext";
 import Navbar from "../../components/navebar/Navbar";
 import "./Edit.css";
 import { useHistory } from 'react-router-dom'
+// import axios from "axios";
+
+
+
 export default function Edit() {
   const { user: currentuser } = useContext(AuthContext);
 

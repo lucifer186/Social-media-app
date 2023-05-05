@@ -2,6 +2,7 @@ import { axiosInstance } from "../../config";
 import { useRef } from "react";
 import "./Register.css";
 import { useHistory } from "react-router";
+// import axios from "axios";
 
 
 export default function Register() {

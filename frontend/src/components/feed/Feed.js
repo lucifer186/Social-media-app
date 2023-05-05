@@ -4,7 +4,7 @@ import Share from "../share/Share";
 import { axiosInstance } from "../../config";
 import Post from "../posts/Post";
 import { AuthContext } from "../../context/AuthContext";
-
+// import axios from 'axios'
 
 
 export default function Feed({username}) {

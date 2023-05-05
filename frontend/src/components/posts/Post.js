@@ -4,6 +4,7 @@ import { axiosInstance } from "../../config";
 import { format } from "timeago.js";
 import { Link } from "react-router-dom";
 import Tooltip from "@material-ui/core/Tooltip";
+// import axios from "axios";
 
 
 import "./Post.css";

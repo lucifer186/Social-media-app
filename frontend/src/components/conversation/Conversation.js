@@ -1,6 +1,7 @@
 import { axiosInstance } from "../../config";
 import React, { useEffect, useState } from "react";
 import "./Conversation.css";
+// import axios from "axios";
 
 export default function Conversation({ conversation, currentUser }) {
   const P_F = process.env.REACT_APP_PUBLIC_FOLDER;

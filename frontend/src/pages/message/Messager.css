@@ -4,7 +4,7 @@
 }
 
 .chatMenu{
-    flex: 3.5;
+    flex: 2.5;
 }
 .chatBox{
     flex: 6.5;
@@ -45,12 +45,15 @@
 
     padding: 10px;
     height: 100%;
+    overflow-y: auto;
 }
 .chatMenuInput{
-    width: 90%;
-    padding: 10px 0;
+    width: 18%;
+    padding: 17px 7px;
     border: none;
     border-bottom: 1px solid gray;
+    margin-top: -10px;
+    position: absolute;
 
 }
 .noConversation{

@@ -17,6 +17,7 @@
     "react-dom": "^18.1.0",
     "react-router-dom": "^5.3.3",
     "react-scripts": "5.0.1",
+    "react-toastify": "^9.1.2",
     "socket.io-client": "^4.5.1",
     "timeago.js": "^4.0.2",
     "uuid": "^8.3.2",
@@ -46,5 +47,10 @@
       "last 1 safari version"
     ]
   },
-  "proxy":"https://backendappnodejs.herokuapp.com/api"
+  "proxy": "https://socail-server.onrender.com/api",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.1"
+  }
 }

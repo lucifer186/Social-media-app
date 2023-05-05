@@ -7,6 +7,9 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 import { Add, Remove } from "@material-ui/icons";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+// import axios from "axios";
 
 
 
@@ -25,11 +28,33 @@ export default function Rightbar({ user }) {
       try {
         const frinedList = await axiosInstance.get("/user/friends/" + user._id);
         setChating(frinedList.data);
-      } catch (err) {}
+        toast.success('Add successfully,Go and chat', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          });
+      } catch (err) {
+
+        toast.error('Not added!', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          });
+      }
     
       chating.map(c=>(
         
-       axiosInstance.post('/conversations', {senderId:currentUser._id, receiverId: c._id})
+        axiosInstance.post('/conversations', {senderId:currentUser._id, receiverId: c._id})
       ))
   
 
@@ -175,6 +200,7 @@ export default function Rightbar({ user }) {
       <div className="wrapper">
         {user ? <ProfilePicture /> : <HomeRightbar />}
       </div>
+      <ToastContainer />
     </div>
   );
 }

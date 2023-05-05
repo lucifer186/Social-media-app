@@ -9,6 +9,8 @@ import { io } from 'socket.io-client'
 
 
 import { axiosInstance } from "../../config";
+// import axios from "axios";
+
 
 export default function Messager() {
   const [conversation, setConversation] = useState([]);
@@ -19,14 +21,14 @@ export default function Messager() {
   const [newMessages, setNewMessages] = useState('');
 
   const { user } = useContext(AuthContext);
-   const socket = useRef(io("ws://localhost:8900"))
+   const socket = useRef(io("https://socket-app-wlfb.onrender.com"))
 
   const scrollRef = useRef()
 
  
 
   useEffect(()=>{
-    socket.current = io("ws://localhost:8900");
+    socket.current = io("https://socket-app-wlfb.onrender.com");
     socket.current.on("getMessage", (data) => {
       setArrivalMessage({
         sender: data.senderId,
@@ -120,6 +122,7 @@ useEffect(()=>{
         <div className="chatMenu">
           <div className="chatMenuWrapper">
             <input placeholder="seacrh friends" className="chatMenuInput" />
+            
             {conversation.map((c) => (
               <div onClick={() => setCurrentChat(c)}>
                 <Conversation conversation={c} currentUser={user} />
@@ -157,7 +160,8 @@ useEffect(()=>{
         </div>
         <div className="chatOnline">
           <div className="chatOnlineWrapper">
-            <ChatOnline onlineUsers= {online} currentId={user._id} setCurrentChat={setCurrentChat} />
+            <ChatOnline onlineUsers= {online} currentId={user._id} setCurrentChat={setCurrentChat}  />
+        
           </div>
         </div>
       </div>
